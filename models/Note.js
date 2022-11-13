@@ -25,7 +25,7 @@ const noteSchema = new mongoose.Schema({
 }
 )
 
-noteSchema.pluging(AutoIncrement, {
+noteSchema.plugin(AutoIncrement, {
   inc_field: 'ticket',
   id: 'ticketNums',
   start_seq: 500
